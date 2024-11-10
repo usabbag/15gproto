@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplies - Coffee App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <main class="content">
+            <div class="nav-header">
+                <h1>Supplies</h1>
+            </div>
+            <div class="supplies-screen">
+                <div class="category-list">
+                    <div class="category-item" data-category="beans">
+                        <button class="category-header" data-category="beans">
+                            <div class="header-left">
+                                <span class="material-icons category-icon">coffee</span>
+                                <h2>Beans</h2>
+                            </div>
+                            <div class="category-stats">
+                                <span class="stat-value">1</span>
+                                <span class="stat-label">Bean Type</span>
+                            </div>
+                            <span class="material-icons expand-icon">expand_more</span>
+                        </button>
+                        <div class="category-content">
+                            <div class="list-item">
+                                <div class="item-main">
+                                    <div class="item-name">Ethiopian Yirgacheffe</div>
+                                    <div class="item-details">Light Roast • Added Mar 15</div>
+                                </div>
+                                <span class="material-icons">chevron_right</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-item" data-category="grinders">
+                        <button class="category-header" data-category="grinders">
+                            <div class="header-left">
+                                <span class="material-icons category-icon">settings</span>
+                                <h2>Grinders</h2>
+                            </div>
+                            <div class="category-stats">
+                                <span class="stat-value">1</span>
+                                <span class="stat-label">Grinder</span>
+                            </div>
+                            <span class="material-icons expand-icon">expand_more</span>
+                        </button>
+                        <div class="category-content">
+                            <div class="list-item">
+                                <div class="item-main">
+                                    <div class="item-name">Baratza Encore</div>
+                                    <div class="item-details">Electric Burr • Added Dec 1</div>
+                                </div>
+                                <span class="material-icons">chevron_right</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-item" data-category="brewing">
+                        <button class="category-header" data-category="brewing">
+                            <div class="header-left">
+                                <span class="material-icons category-icon">coffee_maker</span>
+                                <h2>Brewing</h2>
+                            </div>
+                            <div class="category-stats">
+                                <span class="stat-value">1</span>
+                                <span class="stat-label">Device</span>
+                            </div>
+                            <span class="material-icons expand-icon">expand_more</span>
+                        </button>
+                        <div class="category-content">
+                            <div class="list-item">
+                                <div class="item-main">
+                                    <div class="item-name">Chemex</div>
+                                    <div class="item-details">Pour Over • Added Oct 15</div>
+                                </div>
+                                <span class="material-icons">chevron_right</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <button class="fab">
+            <span class="material-icons">add</span>
+        </button>
+
+        <div class="bottom-nav-container">
+            <nav class="bottom-nav">
+                <a href="supplies.html" class="nav-item active">
+                    <span class="material-icons">coffee_maker</span>
+                    <span>Supplies</span>
+                </a>
+                <a href="my-recipes.html" class="nav-item">
+                    <span class="material-icons">book</span>
+                    <span>My Recipes</span>
+                </a>
+                <a href="public.html" class="nav-item">
+                    <span class="material-icons">public</span>
+                    <span>Public</span>
+                </a>
+                <a href="guides.html" class="nav-item">
+                    <span class="material-icons">school</span>
+                    <span>Guides</span>
+                </a>
+                <a href="tools.html" class="nav-item">
+                    <span class="material-icons">calculate</span>
+                    <span>Tools</span>
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Add Supply Modal -->
+    <div class="modal-overlay" id="addSupplyModal">
+        <div class="bottom-sheet">
+            <div class="sheet-header">
+                <h2>Add New Supply</h2>
+                <button class="close-button">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+            
+            <div class="supply-type-selector">
+                <button class="type-button active" data-type="beans">
+                    <span class="material-icons">coffee</span>
+                    <span>Beans</span>
+                </button>
+                <button class="type-button" data-type="grinders">
+                    <span class="material-icons">settings</span>
+                    <span>Grinder</span>
+                </button>
+                <button class="type-button" data-type="brewing">
+                    <span class="material-icons">coffee_maker</span>
+                    <span>Brewing</span>
+                </button>
+            </div>
+
+            <div class="form-container">
+                <!-- Beans Form -->
+                <form class="supply-form active" id="beansForm">
+                    <div class="form-group">
+                        <label>Bean Name</label>
+                        <input type="text" placeholder="e.g., Ethiopian Yirgacheffe">
+                    </div>
+                    <div class="form-group">
+                        <label>Roast Level</label>
+                        <select>
+                            <option>Light</option>
+                            <option>Medium</option>
+                            <option>Dark</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Roast Date</label>
+                        <input type="date">
+                    </div>
+                    <div class="form-group">
+                        <label>Origin</label>
+                        <input type="text" placeholder="e.g., Ethiopia">
+                    </div>
+                </form>
+
+                <!-- Grinders Form -->
+                <form class="supply-form" id="grindersForm">
+                    <div class="form-group">
+                        <label>Grinder Name</label>
+                        <input type="text" placeholder="e.g., Baratza Encore">
+                    </div>
+                    <div class="form-group">
+                        <label>Type</label>
+                        <select>
+                            <option>Electric Burr</option>
+                            <option>Manual Burr</option>
+                            <option>Blade</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Burr Size</label>
+                        <input type="text" placeholder="e.g., 40mm">
+                    </div>
+                </form>
+
+                <!-- Brewing Devices Form -->
+                <form class="supply-form" id="brewingForm">
+                    <div class="form-group">
+                        <label>Device Name</label>
+                        <input type="text" placeholder="e.g., Chemex">
+                    </div>
+                    <div class="form-group">
+                        <label>Brewing Method</label>
+                        <select>
+                            <option>Pour Over</option>
+                            <option>Immersion</option>
+                            <option>Espresso</option>
+                            <option>Cold Brew</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Capacity</label>
+                        <input type="text" placeholder="e.g., 6 cups">
+                    </div>
+                </form>
+
+                <button class="ai-photo-button">
+                    <span class="material-icons">camera_alt</span>
+                    Identify with Photo
+                </button>
+
+                <button class="submit-button">Add Supply</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="supplies.js"></script>
+</body>
+</html> 

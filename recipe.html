@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morning Pour Over - Coffee App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <main class="content">
+            <div class="screen-header recipe-header-nav">
+                <button class="back-button">
+                    <span class="material-icons">arrow_back</span>
+                </button>
+                <h1>Recipe</h1>
+                <button class="share-button">
+                    <span class="material-icons">share</span>
+                </button>
+            </div>
+
+            <div class="recipe-detail">
+                <div class="recipe-hero">
+                    <h2>Morning Pour Over</h2>
+                    <div class="recipe-meta-info">
+                        <span class="brew-time">
+                            <span class="material-icons">schedule</span>
+                            4 min brew
+                        </span>
+                        <span class="recipe-yield">
+                            <span class="material-icons">local_cafe</span>
+                            1 cup
+                        </span>
+                    </div>
+                </div>
+
+                <section class="recipe-section">
+                    <h3>Equipment</h3>
+                    <div class="equipment-list">
+                        <div class="equipment-item">
+                            <span class="material-icons">coffee_maker</span>
+                            <div class="equipment-info">
+                                <h4>Chemex</h4>
+                                <p>6-cup brewer</p>
+                            </div>
+                        </div>
+                        <div class="equipment-item">
+                            <span class="material-icons">settings</span>
+                            <div class="equipment-info">
+                                <h4>Baratza Encore</h4>
+                                <p>Setting: 21</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="recipe-section">
+                    <h3>Ingredients</h3>
+                    <div class="ingredients-list">
+                        <div class="ingredient-item">
+                            <span class="material-icons">coffee</span>
+                            <div class="ingredient-info">
+                                <h4>Ethiopian Yirgacheffe</h4>
+                                <p>18g • Light Roast</p>
+                            </div>
+                        </div>
+                        <div class="ingredient-item">
+                            <span class="material-icons">water_drop</span>
+                            <div class="ingredient-info">
+                                <h4>Filtered Water</h4>
+                                <p>300ml • 95°C</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="recipe-section">
+                    <h3>Steps</h3>
+                    <div class="steps-list">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Rinse & Preheat</h4>
+                                <p>Place filter and rinse with hot water. This preheats the Chemex and removes paper taste.</p>
+                                <div class="step-meta">30 sec</div>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Bloom</h4>
+                                <p>Add 36g of water (2x coffee weight). Gently stir to ensure all grounds are saturated.</p>
+                                <div class="step-meta">30 sec</div>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>First Pour</h4>
+                                <p>Slowly pour water in circular motion until reaching 150ml total.</p>
+                                <div class="step-meta">1 min</div>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Second Pour</h4>
+                                <p>Continue pouring to 300ml total. Maintain water level in dripper.</p>
+                                <div class="step-meta">2 min</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="recipe-section">
+                    <h3>Notes</h3>
+                    <div class="recipe-notes">
+                        <p>Best served immediately. Adjust grind size if brew time is off - finer if too fast, coarser if too slow. Target total brew time: 4 minutes.</p>
+                    </div>
+                </section>
+
+                <div class="last-brewed">
+                    Last brewed: Today at 8:30 AM
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="recipe.js"></script>
+</body>
+</html> 

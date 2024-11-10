@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipes - Coffee App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <main class="content">
+            <div class="screen-header">
+                <h1>My Recipes</h1>
+                <button class="header-button">
+                    <span class="material-icons">add</span>
+                    Add Recipe
+                </button>
+            </div>
+            <div class="recipes-list">
+                <div class="recipe-card">
+                    <div class="recipe-header">
+                        <h3>Morning Pour Over</h3>
+                        <div class="recipe-meta">
+                            <span class="material-icons">schedule</span>
+                            4 min brew
+                        </div>
+                    </div>
+                    <div class="recipe-details">
+                        <div class="recipe-supplies">
+                            <div class="supply-tag" data-type="beans">
+                                <span class="material-icons">coffee</span>
+                                Ethiopian Yirgacheffe
+                            </div>
+                            <div class="supply-tag" data-type="brewing">
+                                <span class="material-icons">coffee_maker</span>
+                                Chemex
+                            </div>
+                            <div class="supply-tag" data-type="grinders">
+                                <span class="material-icons">settings</span>
+                                Baratza Encore
+                            </div>
+                        </div>
+                        <div class="recipe-stats">
+                            <span><strong>18g</strong> coffee</span>
+                            <span>•</span>
+                            <span><strong>300ml</strong> water</span>
+                            <span>•</span>
+                            <span><strong>95°C</strong></span>
+                        </div>
+                    </div>
+                    <div class="recipe-footer">
+                        <span class="last-brewed">Last brewed: Today</span>
+                        <span class="material-icons">chevron_right</span>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="recipe-header">
+                        <h3>Afternoon Espresso</h3>
+                        <div class="recipe-meta">
+                            <span class="material-icons">schedule</span>
+                            30 sec shot
+                        </div>
+                    </div>
+                    <div class="recipe-details">
+                        <div class="recipe-supplies">
+                            <div class="supply-tag" data-type="beans">
+                                <span class="material-icons">coffee</span>
+                                Brazilian Santos
+                            </div>
+                            <div class="supply-tag" data-type="brewing">
+                                <span class="material-icons">coffee_maker</span>
+                                Breville Barista
+                            </div>
+                        </div>
+                        <div class="recipe-stats">
+                            <span><strong>18g</strong> coffee</span>
+                            <span>•</span>
+                            <span><strong>36g</strong> yield</span>
+                            <span>•</span>
+                            <span><strong>93°C</strong></span>
+                        </div>
+                    </div>
+                    <div class="recipe-footer">
+                        <span class="last-brewed">Last brewed: Yesterday</span>
+                        <span class="material-icons">chevron_right</span>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="recipe-header">
+                        <h3>Cold Brew</h3>
+                        <div class="recipe-meta">
+                            <span class="material-icons">schedule</span>
+                            16 hr steep
+                        </div>
+                    </div>
+                    <div class="recipe-details">
+                        <div class="recipe-supplies">
+                            <div class="supply-tag" data-type="beans">
+                                <span class="material-icons">coffee</span>
+                                Colombian Supremo
+                            </div>
+                            <div class="supply-tag" data-type="brewing">
+                                <span class="material-icons">coffee_maker</span>
+                                Hario Mizudashi
+                            </div>
+                        </div>
+                        <div class="recipe-stats">
+                            <span><strong>85g</strong> coffee</span>
+                            <span>•</span>
+                            <span><strong>1L</strong> water</span>
+                            <span>•</span>
+                            <span><strong>Room temp</strong></span>
+                        </div>
+                    </div>
+                    <div class="recipe-footer">
+                        <span class="last-brewed">Last brewed: 3 days ago</span>
+                        <span class="material-icons">chevron_right</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="bottom-nav-container">
+            <nav class="bottom-nav">
+                <a href="supplies.html" class="nav-item">
+                    <span class="material-icons">coffee_maker</span>
+                    <span>Supplies</span>
+                </a>
+                <a href="my-recipes.html" class="nav-item active">
+                    <span class="material-icons">book</span>
+                    <span>My Recipes</span>
+                </a>
+                <a href="public.html" class="nav-item">
+                    <span class="material-icons">public</span>
+                    <span>Public</span>
+                </a>
+                <a href="guides.html" class="nav-item">
+                    <span class="material-icons">school</span>
+                    <span>Guides</span>
+                </a>
+                <a href="tools.html" class="nav-item">
+                    <span class="material-icons">calculate</span>
+                    <span>Tools</span>
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <script src="recipes.js"></script>
+</body>
+</html> 
